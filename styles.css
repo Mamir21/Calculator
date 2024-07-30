@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 350px;
+    background-color: #3a4452; /* Changed from #fff */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Display styles */
+.display {
+    margin-bottom: 20px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+/* Keys styles */
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button styles */
+.button {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent; /* Changed from #f0f0f0 */
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2); /* Added box-shadow */
+    color: #fff; /* Added color */
+    cursor: pointer; /* Added cursor */
+    margin: 10px; /* Added margin */
+    transition: background-color 0.3s ease;
+}
+
+.button.operator {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.button.equal {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #dcdcdc;
+}
+
+/* Form styles */
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
